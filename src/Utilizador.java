@@ -1,21 +1,12 @@
-public class Utilizador {
+public class Utilizador extends Pessoa{
 
-    private String nome;
     private String estado;
     private TipoUtilizador tipoUtilizador;
 
-    public Utilizador(String nome, String estado, TipoUtilizador tipoUtilizador) {
-        this.nome = nome;
+    public Utilizador(String nomePessoa, String estado, TipoUtilizador tipoUtilizador) {
+        super(nomePessoa);
         this.estado = estado;
         this.tipoUtilizador = tipoUtilizador;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public String getEstado() {
