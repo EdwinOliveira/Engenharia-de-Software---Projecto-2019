@@ -3,12 +3,12 @@ import java.time.LocalDate;
 public class PalestraLivro {
     private Funcionario funcionario;
     private LocalDate data;
-    private LivroFavorito livroFavorito;
+    private RecomendacaoLivroFavorito recomendacaoLivroFavorito;
 
-    public PalestraLivro(Funcionario funcionario, LocalDate data, LivroFavorito livroFavorito) {
+    public PalestraLivro(Funcionario funcionario, LocalDate data, RecomendacaoLivroFavorito recomendacaoLivroFavorito) {
         this.funcionario = funcionario;
         this.data = data;
-        this.livroFavorito = livroFavorito;
+        this.recomendacaoLivroFavorito = recomendacaoLivroFavorito;
     }
 
     public Funcionario getFuncionario() {
@@ -27,11 +27,8 @@ public class PalestraLivro {
         this.data = data;
     }
 
-    public LivroFavorito getLivroFavorito() {
-        return livroFavorito;
+    public RecomendacaoLivroFavorito getRecomendacaoLivroFavorito() {
+        return recomendacaoLivroFavorito;
     }
 
-    public void setLivroFavorito(LivroFavorito livroFavorito) {
-        this.livroFavorito = livroFavorito;
-    }
 }

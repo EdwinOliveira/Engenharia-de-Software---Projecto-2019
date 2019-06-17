@@ -1,5 +1,4 @@
 public interface Repositorio {
-    public void adicionaUtilizador(Utilizador utilizador);
 
     public void adicionaTipoUtilizador(TipoUtilizador tipo);
 
@@ -25,6 +24,15 @@ public interface Repositorio {
 
     public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra);
 
+    public void adicionaRecomendacaoLivro(RecomendacaoLivro recomendacaoLivro);
+
+    public void adicionaPalestraLivro (PalestraLivro palestraLivro);
+
+    public void adicionaPalestraLivroInscricoes (PalestraLivroInscricoes palestraLivroInscricoes);
+
+    public void adicionaFeedbackLivro (FeedbackLivro feedbackLivro);
+
+    public void adicionaPessoa(Pessoa pessoa);
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 

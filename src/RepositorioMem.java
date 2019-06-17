@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+
 public class RepositorioMem implements Repositorio{
 
     ArrayList<Coima> list_Coima = new ArrayList<>();
@@ -10,14 +11,18 @@ public class RepositorioMem implements Repositorio{
     ArrayList<Notificacao> list_Notificacao = new ArrayList<>();
     ArrayList<Requisicao> list_Requisicao = new ArrayList<>();
     ArrayList<TipoUtilizador> list_TipoUtilizador = new ArrayList<>();
-    ArrayList<Utilizador> list_Utilizador = new ArrayList<>();
+    ArrayList<Pessoa> list_Pessoa = new ArrayList<>();
     ArrayList<Encomenda> list_Encomenda = new ArrayList<>();
     ArrayList<PropostaAquisicao> list_PropostaAquisicao = new ArrayList<>();
     ArrayList<EntradaNovoLivro> list_EntradaNovoLivro = new ArrayList<>();
     ArrayList<RequisicaoCompra> list_RequisicaoCompra = new ArrayList<>();
+    ArrayList<RecomendacaoLivro> list_RecomendacaoLivro = new ArrayList<>();
+    ArrayList<PalestraLivro> list_PalestraLivro = new ArrayList<>();
+    ArrayList<PalestraLivroInscricoes> list_PalestraLivroInscricoes = new ArrayList<>();
+    ArrayList<FeedbackLivro> list_FeedbackLivro = new ArrayList<>();
 
-    public void adicionaUtilizador(Utilizador utilizador) {
-        list_Utilizador.add(utilizador);
+    public void adicionaPessoa(Pessoa pessoa) {
+        list_Pessoa.add(pessoa);
     }
 
     public void adicionaTipoUtilizador(TipoUtilizador tipo) {
@@ -60,7 +65,6 @@ public class RepositorioMem implements Repositorio{
 
     public void adicionaRequisicaoCompra(RequisicaoCompra requisicaoCompra) { list_RequisicaoCompra.add(requisicaoCompra);}
 
-
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r) {
         for(Emprestimo emp:list_Emprestimo) {
             if(emp.getRequisicao() == r) {
@@ -69,4 +73,21 @@ public class RepositorioMem implements Repositorio{
         }
         return null;
     }
+
+    public void adicionaRecomendacaoLivro(RecomendacaoLivro recomendacaoLivro) {
+        list_RecomendacaoLivro.add(recomendacaoLivro);
+    }
+
+    public void adicionaPalestraLivro (PalestraLivro palestraLivro) {
+        list_PalestraLivro.add(palestraLivro);
+    }
+
+    public void adicionaPalestraLivroInscricoes (PalestraLivroInscricoes palestraLivroInscricoes) {
+        list_PalestraLivroInscricoes.add(palestraLivroInscricoes);
+    }
+
+    public void adicionaFeedbackLivro (FeedbackLivro feedbackLivro) {
+        list_FeedbackLivro.add(feedbackLivro);
+    }
+
 }

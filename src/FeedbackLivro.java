@@ -1,28 +1,13 @@
 public class FeedbackLivro {
-    private Livro livro;
-    private Utilizador utilizador;
+    private Devolucao devolucao;
     private String descricao;
 
-    public FeedbackLivro(Livro livro, Utilizador utilizador, String descricao) {
-        this.livro = livro;
-        this.utilizador = utilizador;
-        this.descricao = descricao;
+    public Devolucao getDevolucao() {
+        return devolucao;
     }
 
-    public Livro getLivro() {
-        return livro;
-    }
-
-    public void setLivro(Livro livro) {
-        this.livro = livro;
-    }
-
-    public Utilizador getUtilizador() {
-        return utilizador;
-    }
-
-    public void setUtilizador(Utilizador utilizador) {
-        this.utilizador = utilizador;
+    public void setDevolucao(Devolucao devolucao) {
+        this.devolucao = devolucao;
     }
 
     public String getDescricao() {
@@ -30,6 +15,11 @@ public class FeedbackLivro {
     }
 
     public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public FeedbackLivro(Devolucao devolucao, String descricao) {
+        this.devolucao = devolucao;
         this.descricao = descricao;
     }
 }
