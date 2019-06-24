@@ -4,11 +4,13 @@ public abstract class RecomendacaoLivro {
     private Livro livro;
     private String descricao;
     private LocalDate data;
+    private Administrador admin;
 
-    public RecomendacaoLivro(Livro livro, String descricao, LocalDate dataCriacaoRecomendacao) {
+    public RecomendacaoLivro(Livro livro, String descricao, LocalDate data, Administrador admin) {
         this.livro = livro;
         this.descricao = descricao;
-        this.data = dataCriacaoRecomendacao;
+        this.data = data;
+        this.admin = admin;
     }
 
     public Livro getLivro() {
@@ -27,11 +29,19 @@ public abstract class RecomendacaoLivro {
         this.descricao = descricao;
     }
 
-    public LocalDate getDataCriacaoRecomendacao() {
+    public LocalDate getData() {
         return data;
     }
 
-    public void setDataCriacaoRecomendacao(LocalDate dataCriacaoRecomendacao) {
-        this.data = dataCriacaoRecomendacao;
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    public Administrador getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Administrador admin) {
+        this.admin = admin;
     }
 }
