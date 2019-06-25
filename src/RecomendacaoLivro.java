@@ -1,16 +1,17 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public abstract class RecomendacaoLivro {
     private Livro livro;
     private String descricao;
     private LocalDate data;
-    private Administrador admin;
+    private ArrayList<Utilizador> list_Utilizadores = new ArrayList<>();
 
-    public RecomendacaoLivro(Livro livro, String descricao, LocalDate data, Administrador admin) {
+    public RecomendacaoLivro(Livro livro, String descricao, LocalDate data, ArrayList<Utilizador> list_Utilizadores) {
         this.livro = livro;
         this.descricao = descricao;
         this.data = data;
-        this.admin = admin;
+        this.list_Utilizadores = list_Utilizadores;
     }
 
     public Livro getLivro() {
@@ -37,11 +38,11 @@ public abstract class RecomendacaoLivro {
         this.data = data;
     }
 
-    public Administrador getAdmin() {
-        return admin;
+    public ArrayList<Utilizador> getList_Utilizadores() {
+        return list_Utilizadores;
     }
 
-    public void setAdmin(Administrador admin) {
-        this.admin = admin;
+    public void setList_Utilizadores(ArrayList<Utilizador> list_Utilizadores) {
+        this.list_Utilizadores = list_Utilizadores;
     }
 }

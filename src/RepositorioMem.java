@@ -11,7 +11,6 @@ public class RepositorioMem implements Repositorio{
     ArrayList<Notificacao> list_Notificacao = new ArrayList<>();
     ArrayList<Requisicao> list_Requisicao = new ArrayList<>();
     ArrayList<TipoUtilizador> list_TipoUtilizador = new ArrayList<>();
-    ArrayList<Pessoa> list_Pessoa = new ArrayList<>();
     ArrayList<Encomenda> list_Encomenda = new ArrayList<>();
     ArrayList<PropostaAquisicao> list_PropostaAquisicao = new ArrayList<>();
     ArrayList<EntradaNovoLivro> list_EntradaNovoLivro = new ArrayList<>();
@@ -21,9 +20,10 @@ public class RepositorioMem implements Repositorio{
     ArrayList<PalestraLivroInscricoes> list_PalestraLivroInscricoes = new ArrayList<>();
     ArrayList<FeedbackLivro> list_FeedbackLivro = new ArrayList<>();
     ArrayList<RecomendacaoPorCliente> list_RecomendacaoPorCliente = new ArrayList<>();
+    ArrayList<Utilizador> list_Utilizador = new ArrayList<>();
 
-    public void adicionaPessoa(Pessoa pessoa) {
-        list_Pessoa.add(pessoa);
+    public void adicionaUtilizador(Utilizador utilizador) {
+        list_Utilizador.add(utilizador);
     }
 
     public void adicionaTipoUtilizador(TipoUtilizador tipo) {

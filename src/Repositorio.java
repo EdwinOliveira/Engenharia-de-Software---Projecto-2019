@@ -32,7 +32,7 @@ public interface Repositorio {
 
     public void adicionaFeedbackLivro (FeedbackLivro feedbackLivro);
 
-    public void adicionaPessoa(Pessoa pessoa);
+    public void adicionaUtilizador(Utilizador utilizador);
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 
