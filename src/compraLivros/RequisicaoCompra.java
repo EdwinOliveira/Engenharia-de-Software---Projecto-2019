@@ -1,3 +1,8 @@
+package compraLivros;
+
+import livros.Livro;
+import utilizador.Utilizador;
+
 import java.time.LocalDate;
 
 public abstract class RequisicaoCompra {

@@ -1,13 +1,19 @@
+package emprestimos;
+
+import livros.Copia;
+import utilizador.Utilizador;
+
 import java.time.LocalDate;
 
-public class EntradaNovoLivro {
+public class Requisicao {
+
     private LocalDate data;
-    private Encomenda encomenda;
+    private Utilizador utilizador;
     private Copia copia;
 
-    public EntradaNovoLivro(LocalDate data, Encomenda encomenda, Copia copia) {
+    public Requisicao(LocalDate data, Utilizador utilizador, Copia copia) {
         this.data = data;
-        this.encomenda = encomenda;
+        this.utilizador = utilizador;
         this.copia = copia;
     }
 
@@ -19,12 +25,12 @@ public class EntradaNovoLivro {
         this.data = data;
     }
 
-    public Encomenda getEncomenda() {
-        return encomenda;
+    public Utilizador getUtilizador() {
+        return utilizador;
     }
 
-    public void setEncomenda(Encomenda encomenda) {
-        this.encomenda = encomenda;
+    public void setUtilizador(Utilizador utilizador) {
+        this.utilizador = utilizador;
     }
 
     public Copia getCopia() {

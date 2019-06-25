@@ -1,7 +1,23 @@
+package util;
+
+import compraLivros.EntradaNovoLivro;
+import compraLivros.PropostaAquisicao;
+import compraLivros.RequisicaoCompra;
+import emprestimos.*;
+import livros.Copia;
+import livros.Livro;
+import emprestimos.FeedbackLivro;
+import recomendacao.PalestraLivro;
+import recomendacao.PalestraLivroInscricoes;
+import recomendacao.RecomendacaoLivro;
+import util.Repositorio;
+import utilizador.TipoUtilizador;
+import utilizador.Utilizador;
+
 import java.util.ArrayList;
 
 
-public class RepositorioMem implements Repositorio{
+public class RepositorioMem implements Repositorio {
 
     ArrayList<Coima> list_Coima = new ArrayList<>();
     ArrayList<Copia> list_Copia = new ArrayList<>();

@@ -1,3 +1,13 @@
+import compraLivros.EntradaNovoLivro;
+import compraLivros.PropostaAquisicao;
+import compraLivros.RequisicaoCompraCopia;
+import emprestimos.Encomenda;
+import livros.Copia;
+import livros.Livro;
+import util.RepositorioMem;
+import utilizador.TipoUtilizador;
+import utilizador.Utilizador;
+
 import java.time.LocalDate;
 
 public class Main {

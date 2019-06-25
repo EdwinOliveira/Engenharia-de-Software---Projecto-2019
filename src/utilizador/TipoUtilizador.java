@@ -1,3 +1,5 @@
+package utilizador;
+
 public class TipoUtilizador {
     private String descricao;
     private int prazoEmprestimo;

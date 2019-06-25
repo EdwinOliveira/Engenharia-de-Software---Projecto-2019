@@ -1,3 +1,7 @@
+package emprestimos;
+
+import emprestimos.Devolucao;
+
 public class Coima {
 
     private String descricao;

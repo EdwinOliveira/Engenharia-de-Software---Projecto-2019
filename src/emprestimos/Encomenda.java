@@ -1,11 +1,16 @@
+package emprestimos;
+
+import compraLivros.RequisicaoCompra;
+
 import java.time.LocalDate;
 
-public class Emprestimo {
 
+public class Encomenda {
     private LocalDate data;
-    private Requisicao requisicao;
+    private RequisicaoCompra requisicao;
 
-    public Emprestimo(LocalDate data, Requisicao requisicao) {
+
+    public Encomenda(LocalDate data, RequisicaoCompra requisicao) {
         this.data = data;
         this.requisicao = requisicao;
     }
@@ -18,11 +23,11 @@ public class Emprestimo {
         this.data = data;
     }
 
-    public Requisicao getRequisicao() {
+    public RequisicaoCompra getRequisicao() {
         return requisicao;
     }
 
-    public void setRequisicao(Requisicao requisicao) {
+    public void setRequisicao(RequisicaoCompra requisicao) {
         this.requisicao = requisicao;
     }
 }

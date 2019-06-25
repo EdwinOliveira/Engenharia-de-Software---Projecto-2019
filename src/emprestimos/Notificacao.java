@@ -1,3 +1,5 @@
+package emprestimos;
+
 import java.time.LocalDate;
 
 public class Notificacao {

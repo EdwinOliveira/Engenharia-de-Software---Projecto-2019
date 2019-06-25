@@ -1,3 +1,5 @@
+package utilizador;
+
 public class Utilizador {
 
     private String estado;

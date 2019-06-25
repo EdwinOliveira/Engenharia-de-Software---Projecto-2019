@@ -1,3 +1,8 @@
+package recomendacao;
+
+import recomendacao.PalestraLivro;
+import utilizador.Utilizador;
+
 import java.util.ArrayList;
 
 public class PalestraLivroInscricoes {

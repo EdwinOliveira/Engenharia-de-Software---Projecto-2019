@@ -1,5 +1,9 @@
+package recomendacao;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
+import livros.Livro;
+import utilizador.Utilizador;
 
 public abstract class RecomendacaoLivro {
     private Livro livro;

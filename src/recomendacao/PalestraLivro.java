@@ -1,3 +1,8 @@
+package recomendacao;
+
+import recomendacao.RecomendacaoLivroFavorito;
+
+import utilizador.Utilizador;
 import java.time.LocalDate;
 
 public class PalestraLivro {

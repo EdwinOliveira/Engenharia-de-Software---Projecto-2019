@@ -1,3 +1,9 @@
+package compraLivros;
+
+import compraLivros.RequisicaoCompra;
+import livros.Livro;
+import utilizador.Utilizador;
+
 import java.time.LocalDate;
 
 public class RequisicaoCompraCopia extends RequisicaoCompra {

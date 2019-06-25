@@ -1,3 +1,7 @@
+package compraLivros;
+
+import utilizador.Utilizador;
+
 import java.time.LocalDate;
 
 public class PropostaAquisicao {

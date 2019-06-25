@@ -1,3 +1,7 @@
+package emprestimos;
+
+import emprestimos.Devolucao;
+
 public class FeedbackLivro {
     private Devolucao devolucao;
     private String descricao;
