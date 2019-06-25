@@ -2,12 +2,22 @@ package utilizador;
 
 public class Utilizador {
 
+    private String nome;
     private String estado;
     private TipoUtilizador tipoUtilizador;
 
-    public Utilizador(String manuel, String estado, TipoUtilizador tipoUtilizador) {
+    public Utilizador(String nome, String estado, TipoUtilizador tipoUtilizador) {
+        this.nome = nome;
         this.estado = estado;
         this.tipoUtilizador = tipoUtilizador;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEstado() {

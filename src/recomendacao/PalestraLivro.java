@@ -16,5 +16,27 @@ public class PalestraLivro {
         this.recomendacaoLivroFavorito = recomendacaoLivroFavorito;
     }
 
+    public Utilizador getUtilizador() {
+        return utilizador;
+    }
 
+    public void setUtilizador(Utilizador utilizador) {
+        this.utilizador = utilizador;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
+    }
+
+    public RecomendacaoLivroFavorito getRecomendacaoLivroFavorito() {
+        return recomendacaoLivroFavorito;
+    }
+
+    public void setRecomendacaoLivroFavorito(RecomendacaoLivroFavorito recomendacaoLivroFavorito) {
+        this.recomendacaoLivroFavorito = recomendacaoLivroFavorito;
+    }
 }

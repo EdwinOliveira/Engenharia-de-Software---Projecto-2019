@@ -6,11 +6,10 @@ import compraLivros.RequisicaoCompra;
 import emprestimos.*;
 import livros.Copia;
 import livros.Livro;
-import emprestimos.FeedbackLivro;
+import recomendacao.FeedbackLivro;
 import recomendacao.PalestraLivro;
 import recomendacao.PalestraLivroInscricoes;
 import recomendacao.RecomendacaoLivro;
-import util.Repositorio;
 import utilizador.TipoUtilizador;
 import utilizador.Utilizador;
 
