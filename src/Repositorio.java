@@ -36,6 +36,5 @@ public interface Repositorio {
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r);
 
-    public void adicionaRecomendacaoPorCliente (RecomendacaoPorCliente recomendacaoPorCliente);
 
 }
