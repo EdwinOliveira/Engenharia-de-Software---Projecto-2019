@@ -1,4 +1,4 @@
-package emprestimos;
+package recomendacao;
 
 import emprestimos.Devolucao;
 
