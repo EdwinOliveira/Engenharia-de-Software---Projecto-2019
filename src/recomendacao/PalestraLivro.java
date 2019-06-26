@@ -1,27 +1,28 @@
 package recomendacao;
 
-import recomendacao.RecomendacaoLivroFavorito;
 
 import utilizador.Utilizador;
+import livros.Livro;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class PalestraLivro {
-    private Utilizador utilizador;
+    private ArrayList<Utilizador> list_Utilizadores = new ArrayList<>();;
     private LocalDate data;
-    private RecomendacaoLivroFavorito recomendacaoLivroFavorito;
+    private RecomendacaoLivroFavorito livroFavorito;
 
-    public PalestraLivro(Utilizador utilizador, LocalDate data, RecomendacaoLivroFavorito recomendacaoLivroFavorito) {
-        this.utilizador = utilizador;
+    public PalestraLivro(ArrayList<Utilizador> list_Utilizadores, LocalDate data, RecomendacaoLivroFavorito livroFavorito) {
+        this.list_Utilizadores = list_Utilizadores;
         this.data = data;
-        this.recomendacaoLivroFavorito = recomendacaoLivroFavorito;
+        this.livroFavorito = livroFavorito;
     }
 
-    public Utilizador getUtilizador() {
-        return utilizador;
+    public ArrayList<Utilizador> getList_Utilizadores() {
+        return list_Utilizadores;
     }
 
-    public void setUtilizador(Utilizador utilizador) {
-        this.utilizador = utilizador;
+    public void setList_Utilizadores(ArrayList<Utilizador> list_Utilizadores) {
+        this.list_Utilizadores = list_Utilizadores;
     }
 
     public LocalDate getData() {
@@ -32,11 +33,11 @@ public class PalestraLivro {
         this.data = data;
     }
 
-    public RecomendacaoLivroFavorito getRecomendacaoLivroFavorito() {
-        return recomendacaoLivroFavorito;
+    public RecomendacaoLivroFavorito getLivroFavorito() {
+        return livroFavorito;
     }
 
-    public void setRecomendacaoLivroFavorito(RecomendacaoLivroFavorito recomendacaoLivroFavorito) {
-        this.recomendacaoLivroFavorito = recomendacaoLivroFavorito;
+    public void setLivroFavorito(RecomendacaoLivroFavorito livroFavorito) {
+        this.livroFavorito = livroFavorito;
     }
 }

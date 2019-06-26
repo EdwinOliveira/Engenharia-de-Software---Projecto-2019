@@ -8,7 +8,6 @@ import livros.Copia;
 import livros.Livro;
 import recomendacao.FeedbackLivro;
 import recomendacao.PalestraLivro;
-import recomendacao.PalestraLivroInscricoes;
 import recomendacao.RecomendacaoLivro;
 import utilizador.TipoUtilizador;
 import utilizador.Utilizador;
@@ -42,8 +41,6 @@ public interface Repositorio {
     public void adicionaRecomendacaoLivro(RecomendacaoLivro recomendacaoLivro);
 
     public void adicionaPalestraLivro (PalestraLivro palestraLivro);
-
-    public void adicionaPalestraLivroInscricoes (PalestraLivroInscricoes palestraLivroInscricoes);
 
     public void adicionaFeedbackLivro (FeedbackLivro feedbackLivro);
 

@@ -8,7 +8,6 @@ import livros.Copia;
 import livros.Livro;
 import recomendacao.FeedbackLivro;
 import recomendacao.PalestraLivro;
-import recomendacao.PalestraLivroInscricoes;
 import recomendacao.RecomendacaoLivro;
 import utilizador.TipoUtilizador;
 import utilizador.Utilizador;
@@ -32,7 +31,6 @@ public class RepositorioMem implements Repositorio {
     ArrayList<RequisicaoCompra> list_RequisicaoCompra = new ArrayList<>();
     ArrayList<RecomendacaoLivro> list_RecomendacaoLivro = new ArrayList<>();
     ArrayList<PalestraLivro> list_PalestraLivro = new ArrayList<>();
-    ArrayList<PalestraLivroInscricoes> list_PalestraLivroInscricoes = new ArrayList<>();
     ArrayList<FeedbackLivro> list_FeedbackLivro = new ArrayList<>();
     ArrayList<Utilizador> list_Utilizador = new ArrayList<>();
 
@@ -95,10 +93,6 @@ public class RepositorioMem implements Repositorio {
 
     public void adicionaPalestraLivro (PalestraLivro palestraLivro) {
         list_PalestraLivro.add(palestraLivro);
-    }
-
-    public void adicionaPalestraLivroInscricoes (PalestraLivroInscricoes palestraLivroInscricoes) {
-        list_PalestraLivroInscricoes.add(palestraLivroInscricoes);
     }
 
     public void adicionaFeedbackLivro (FeedbackLivro feedbackLivro) {
